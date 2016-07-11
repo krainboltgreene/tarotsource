@@ -1,0 +1,17 @@
+<h1>Apply for Reader Status</h1>
+
+<%= form_for @account, url: registration_url(@account), html: { method: :put } do |form| %>
+  <section class="field">
+    <%= form.check_box :reader? %>
+    <%= form.label :reader?, "I agree to the terms of service for Readers and I want to be a Reader." %>
+  </section>
+
+  <section class="field">
+    <%= form.label :current_password %>
+    <%= form.password_field :current_password, autocomplete: "off" %>
+  </section>
+
+  <section class="actions">
+    <%= form.submit "Accept" %>
+  </section>
+<% end %>

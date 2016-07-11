@@ -1,0 +1,17 @@
+<h1>New Store</h1>
+
+<%= form_for @store do |form| %>
+  <section class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, autofocus: true %>
+  </section>
+
+  <section class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </section>
+
+  <section class="actions">
+    <%= form.submit %>
+  </section>
+<% end %>

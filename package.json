@@ -1,0 +1,37 @@
+{
+  "name": "tarotsource",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client/index.js",
+  "scripts": {
+    "test": "npm-run-all test:unit test:acceptance",
+    "test:unit": "mocha --compilers js:babel-register './client/**/test.js'",
+    "test:acceptance": "mocha --compilers js:babel-register './client/**/acceptance.js'"
+  },
+  "author": "Kurtis Rainbolt-Greene <me@kurtisrainboltgreene.name> (@krainboltgreene)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^6",
+    "babel": "^6",
+    "babel-cli": "^6",
+    "babel-core": "^6",
+    "babel-plugin-transform-es2015-destructuring": "^6",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6",
+    "babel-plugin-transform-exponentiation-operator": "^6",
+    "babel-plugin-transform-export-extensions": "^6",
+    "babel-plugin-transform-object-rest-spread": "^6",
+    "chai": "^3",
+    "chakram": "^1",
+    "eslint": "^2",
+    "eslint-plugin-babel": "^3",
+    "eslint-plugin-immutable": "^1",
+    "eslint-plugin-import": "^1",
+    "eslint-plugin-mocha": "^3",
+    "eslint-plugin-node": "^1",
+    "greenkeeper": "^2",
+    "mocha": "^2",
+    "npm": "^3",
+    "npm-run-all": "^2",
+    "nightmare": "^2"
+  }
+}

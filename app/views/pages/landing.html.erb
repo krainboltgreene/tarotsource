@@ -1,0 +1,8 @@
+<h1>The Tarot Source</h1>
+
+
+<% unless account_signed_in? %>
+  <p>
+    <%= link_to "Sign up", new_account_registration_url %>
+  </p>
+<% end %>

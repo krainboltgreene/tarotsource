@@ -1,0 +1,14 @@
+<% if current_account.store.present? %>
+  <% if current_account.readings.any? %>
+    <ul>
+      <% current_account.readings.each do |reading| %>
+        <li><%= reading.name %></li>
+      <% end %>
+    </ul>
+  <% else %>
+  <% end %>
+<% else %>
+  <p>
+    Would you like to sell your readings online? <%= link_to "You can create a new store with us by clicking here.", new_store_url %>
+  </p>
+<% end %>
